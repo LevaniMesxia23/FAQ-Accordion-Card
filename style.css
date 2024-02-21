@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  width: 1440px;
+  min-height: 100vh;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  margin-top: 65px;
+  margin-bottom: 42px;
+}
+.main-container{
+  position: relative;
+}
+.container{
+  width: 920px;
+  height: 509px;
+  flex-shrink: 0;
+  border-radius: 23px;
+  background: #FFF;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.50);
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.right-side{
+  margin-top: 0;
+  margin-left: 100px;
+  max-width: 350px;
+}
+.image-one{
+  position: absolute;
+  left: -93px;
+  top: 188px;
+  z-index: 10;
+}
+.left-side .image-two{
+  position: absolute;
+  top: 10%;
+  left: -90px;
+  z-index: 2;
+}
+.left-side .image-three{
+  position: absolute;
+  top: -60%;
+  left: -588px;
+  z-index: 1;
+}
+
+.mob-pattern,.mob-woman{
+  display: none;
+}
+
+.button{
+  width: 350px;
+  height: 35px;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #E8E8EA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  font-size: 12px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #787887;
+}
+.sentence-box.open .answer{
+  max-height: fit-content;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #e8e8ea;
+  padding-bottom: 16px;
+  transition: all 0.3s ease;
+}
+.sentence-box.open .question{
+  font-weight: bold;
+}
+.sentence-box.open img{
+  transform: rotate(180deg);
+  transition: all 0.5s ease;
+}
+.sentence-box{
+  transition: all 0.5s ease;
+}
+p .question{
+  color: #4B4C5F;
+}
+.question:hover{
+  color: #f47b56;
+  cursor: pointer;
+}
+@media only screen and (max-width: 900px){
+
+  .container{
+    width: 375px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    object-fit: cover;
+  }
+  h1{
+    padding-top: 70px;
+  }
+  .right-side{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 48px;
+    object-fit: cover;
+  }
+  .sentence-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .answer{
+    display: flex;
+    justify-content: center;
+    width: 279px;
+  }
+  .button{
+    width: 279px;
+  }
+  .left-side .image-one,.image-two,.image-three{
+    display: none;
+  }
+  .mob-images{
+    display: flex;
+    justify-content: center;
+  }
+  .mob-woman{
+    display: block;
+    position: absolute;
+    width: 237px;
+    height: 180px;
+    align-self: center;
+    flex-grow: 0;
+    margin-top: -20px;
+  }
+  .mob-pattern{
+    display: block;
+    position: absolute;
+    width: 240px;
+    height: 104px;
+    object-fit: contain;
+  }
+}
