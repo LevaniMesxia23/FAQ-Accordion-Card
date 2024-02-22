@@ -40,12 +40,12 @@ h1{
 .image-one{
   position: absolute;
   left: -93px;
-  top: 188px;
+  top: 196px;
   z-index: 10;
 }
 .left-side .image-two{
   position: absolute;
-  top: 10%;
+  top: 12%;
   left: -90px;
   z-index: 2;
 }
